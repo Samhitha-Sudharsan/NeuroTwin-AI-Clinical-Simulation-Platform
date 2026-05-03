@@ -31,3 +31,9 @@ By using Neural Mass Models (NMM) and Reinforcement Learning (RL), this framewor
 
 ### Viewing the Interactive Dashboard
 Simply open `frontend/index.html` in any modern web browser. No server required!
+
+
+**Preview**
+<img width="1889" height="865" alt="image" src="https://github.com/user-attachments/assets/9751f6aa-a69d-468b-8235-a8c74d265462" />
+<img width="1634" height="836" alt="image" src="https://github.com/user-attachments/assets/ad4a432a-05fc-45d8-96ce-b7890f9a7346" />
+
