@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroTwin AI | Live Digital Twin</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>NeuroTwin AI</h1>
+            <p>Live Cortical Column Simulation (Jansen-Rit Neural Mass Model)</p>
+        </header>
+
+        <div class="dashboard">
+            <section class="glass-panel visualization-panel">
+                <div class="panel-header">
+                    <h2>Live EEG Output</h2>
+                    <div class="status-indicator" id="system-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Healthy State</span>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="eegChart"></canvas>
+                </div>
+            </section>
+
+            <section class="glass-panel control-panel">
+                <h2>Neuromodulation Controls</h2>
+                <p class="subtitle">Tweak the brain's physics or apply interventions to observe plasticity.</p>
+                
+                <div class="control-group">
+                    <div class="control-header">
+                        <label for="excGain">Excitatory Gain (A)</label>
+                        <span class="val-display" id="excVal">3.25 mV</span>
+                    </div>
+                    <input type="range" id="excGain" min="1.0" max="8.0" step="0.1" value="3.25">
+                    <small>Increases pyramidal cell excitation (High = Seizure risk)</small>
+                </div>
+
+                <div class="control-group">
+                    <div class="control-header">
+                        <label for="inhGain">Inhibitory Gain (B)</label>
+                        <span class="val-display" id="inhVal">22.0 mV</span>
+                    </div>
+                    <input type="range" id="inhGain" min="5.0" max="40.0" step="0.5" value="22.0">
+                    <small>Increases dampening (Low = FND/Spiking risk)</small>
+                </div>
+                
+                <div class="control-group">
+                    <div class="control-header">
+                        <label for="noiseMean">Input Noise Mean</label>
+                        <span class="val-display" id="noiseVal">220.0</span>
+                    </div>
+                    <input type="range" id="noiseMean" min="100.0" max="350.0" step="5.0" value="220.0">
+                    <small>Simulates background sensory input</small>
+                </div>
+
+                <div class="action-group">
+                    <button id="btn-tms" class="btn-primary">Apply TMS Pulse</button>
+                    <button id="btn-reset" class="btn-secondary">Reset Twin</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
