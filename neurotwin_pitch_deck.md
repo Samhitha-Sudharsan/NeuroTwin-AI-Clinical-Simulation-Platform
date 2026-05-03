@@ -8,7 +8,7 @@
 ## 2. The Solution: Clinical Digital Twins
 *   **NeuroStream Ambient Sensors:** We use computer vision and ambient room sensors to continuously monitor a patient's movement, micro-expressions, and environmental triggers without invasive wires.
 *   **The Digital Twin (AI NMM):** We feed this behavioral data—along with baseline fMRI/EEG scans—into a personalized mathematical simulation of the patient's brain (a Neural Mass Model).
-*   **Prescriptive AI:** Our deep reinforcement learning agent tests thousands of simulated therapeutic interventions on the "Twin" instantly, outputting the exact behavioral or neuromodulatory (TMS) protocol that will force the patient's biological brain back into a healthy state the fastest.
+*   **Prescriptive AI:** Our deep reinforcement learning agent serves as a **patient-specific treatment simulation and optimization engine for neurological disorders**. It tests thousands of simulated therapeutic interventions on the "Twin" to recommend a highly optimized behavioral or neuromodulatory (TMS) protocol designed to guide the patient's biological brain back toward a healthy state.
 
 ## 3. Market & Business Model
 *   **Target Market:** Top-tier neurology hospitals, inpatient rehabilitation facilities, and specialized outpatient clinics treating FND, stroke recovery, and cancer-related cognitive impairment (Chemobrain).
@@ -20,4 +20,4 @@
 
 ## 4. The Technical Moat
 *   Our core engine bridges the gap between **computational neuroscience** (Jansen-Rit models, Dynamic Causal Modeling) and **applied behavioral analysis**.
-*   Instead of just tracking symptoms, we map the trajectory of *neuroplastic recovery*, predicting the exact intervention needed to reprogram the brain's "software" faster than human trial-and-error ever could.
+*   Instead of just tracking symptoms, we map the trajectory of *neuroplastic recovery*, simulating various interventions to find the most statistically probable path to reprogram the brain's "software," significantly reducing the time spent on human trial-and-error.
